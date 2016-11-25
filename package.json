@@ -1,0 +1,35 @@
+{
+  "name": "luay",
+  "version": "0.0.0",
+  "description": "NodeJS Framework in ES6",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require babel-polyfill",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha --  --compilers js:babel-core/register --require babel-polyfill",
+    "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannickDa/Luay.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "node.js",
+    "framework"
+  ],
+  "author": "Yannick Dalbin <yannick@idvive.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickDa/Luay/issues"
+  },
+  "homepage": "https://github.com/YannickDa/Luay#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "0.0.9",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  }
+}
